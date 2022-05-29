@@ -3,6 +3,11 @@
     <h1>
       <nuxt-link to="/">Code Name Chord</nuxt-link>
     </h1>
+    <nav>
+      <ul>
+        <li><nuxt-link to="/music/list">Music</nuxt-link></li>
+      </ul>
+    </nav>
   </header>
 </template>
 
