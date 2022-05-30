@@ -14,6 +14,7 @@
 <style lang="scss" scoped>
 .the-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
   padding: 0 20px;

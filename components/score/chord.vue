@@ -1,16 +1,23 @@
 <script setup>
 const props = defineProps({
-  score: {
-    type: Array,
-    default: []
+  music: {
+    type: Object,
+    default: {}
   }
 });
+
+const a = 1;
+const b = ref(1);
 </script>
 
 <template>
-  <div class="score-chord">
-    <div class="section" v-for="(section, index) in score" :key="index">
-      <div class="chord">{{ section.chord }}</div>
+  <div class="score-chord" :style="`grid-template-columns: repeat(${8}, 1fr);`">
+    <div class="section" v-for="(section, index) in music.score" :key="index">
+      <div class="chord">
+        <div class="chord-item" v-for="(item, index) in section.chord" :key="index">
+          {{ item }}
+        </div>
+      </div>
       <div class="lyrics">{{ section.lyrics }}</div>
     </div>
   </div>
@@ -18,8 +25,17 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .score-chord {
-  .section {
+  display: grid;
+  
 
+  .section {
+    .chord {
+      display: flex;
+
+      .chord-item {
+        flex-grow: 1;
+      }
+    }
   }
 }
 </style>

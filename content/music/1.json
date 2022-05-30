@@ -18,6 +18,38 @@
     {
       "chord": ["D", "G"],
       "lyrics": "방문을"
+    },
+    {
+      "chord": ["Em", "D"],
+      "lyrics": "잊어야 한다는"
+    },
+    {
+      "chord": ["Em", "Bm"],
+      "lyrics": "마음으로"
+    },
+    {
+      "chord": ["C", "G"],
+      "lyrics": "내 텅빈"
+    },
+    {
+      "chord": ["D", "G"],
+      "lyrics": "방문을"
+    },
+    {
+      "chord": ["Em", "D"],
+      "lyrics": "잊어야 한다는"
+    },
+    {
+      "chord": ["Em", "Bm"],
+      "lyrics": "마음으로"
+    },
+    {
+      "chord": ["C", "G"],
+      "lyrics": "내 텅빈"
+    },
+    {
+      "chord": ["D", "G"],
+      "lyrics": "방문을"
     }
   ]
 }
