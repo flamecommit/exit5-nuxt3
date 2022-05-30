@@ -1,18 +1,27 @@
 <script setup>
-const { path, query, params } = useRoute();
+const { path, params } = useRoute();
 
 const state = reactive({
   singer: null,
   score: null,
 });
 
-/*const { data: music } = await useAsyncData('music', async () => queryContent('/music').where({_path: path}).findOne());
+console.log('path : ', path);
+console.log('params : ', params);
 
-console.log(music);*/
+const { data: music } = await useAsyncData(
+  'music',
+  () => {
+    console.log('use async data')
+    return queryContent('/music').where({_path: path}).findOne();
+  }
+);
+
+refreshNuxtData('music');
 
 // console.log(music.value.singer);
 
-const { data: music } = await useFetch(() => queryContent('/music').where({_path: path}).findOne());
+// const { data: music } = await useFetch(() => queryContent('/music').where({_path: path}).findOne());
 
 /*defineExpose({
   ...toRefs(state),
@@ -20,9 +29,20 @@ const { data: music } = await useFetch(() => queryContent('/music').where({_path
 </script>
 
 <template>
-  <div class="page-music">
-    {{ music }}
-    <!-- <p>가수 : {{ music.singer }}</p>
-    <score-chord :score="music.score" /> -->
+  <div class="page-music-detail">
+    <h1>{{ music.title }}</h1>
+    <!-- {{ music }} -->
+    <!-- <p>가수 : {{ music.singer }}</p> -->
+    <score-chord :score="music.score" />
   </div>
 </template>
+
+<style lang="scss" scoped>
+.page-music-detail {
+  padding: 50px;
+
+  h1 {
+    font-size: 20px;
+  }
+}
+</style>
