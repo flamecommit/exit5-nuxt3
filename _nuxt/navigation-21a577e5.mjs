@@ -1,1 +1,0 @@
-import{j as n,u as s,h as p}from"./json-f486932f.mjs";import"./entry-87e893ea.mjs";import{w as e}from"./utils-fcbd9914.mjs";const r=a=>{const o=a==null?void 0:a.params(),t=e(o?`/navigation/${p(o)}`:"/navigation");return $fetch(t,{method:"GET",responseType:"json",params:{_params:n(o||{}),previewToken:s("previewToken").value}})};export{r as f};

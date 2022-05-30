@@ -1,1 +1,0 @@
-import{_ as e,x as s,C as t,E as c}from"./entry-87e893ea.mjs";const n={},o={class:"page-index"},_=c("p",null,"index",-1),a=[_];function r(d,i){return s(),t("div",o,a)}var x=e(n,[["render",r]]);export{x as default};
