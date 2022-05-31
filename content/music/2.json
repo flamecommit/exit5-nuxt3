@@ -2,10 +2,8 @@
   "singer": "윤도현",
   "year": 1992,
   "title": "나는나비",
+  "measure": 4,
   "score": [
-    {
-      "chord": ["Em", "D"],
-      "lyrics": "1111"
-    }
+    {"chord": [{"text": "G"}, {"text": "D"}], "lyrics": "잊어야 한다는"}
   ]
 }

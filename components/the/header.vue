@@ -1,7 +1,7 @@
 <template>
   <header class="the-header">
-    <h1>
-      <nuxt-link to="/">Code Name Chord</nuxt-link>
+    <h1 class="logo">
+      <nuxt-link to="/">Exit5</nuxt-link>
     </h1>
     <nav>
       <ul>
@@ -19,5 +19,14 @@
   height: 70px;
   padding: 0 20px;
   border-bottom: 1px solid #000;
+  background: #f7f7f7;
+
+  .logo {
+    a {
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
 }
 </style>
