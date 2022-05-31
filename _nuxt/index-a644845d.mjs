@@ -1,0 +1,1 @@
+import{_ as t,x as s,C as o,D as n,z as _,E as c,B as a,F as i}from"./entry-025e378f.mjs";const r={},d={class:"page-index"},x=c("p",null,"index",-1),l=i("Go List");function p(u,f){const e=a;return s(),o("div",d,[x,n(e,{to:"/music/list"},{default:_(()=>[l]),_:1})])}var h=t(r,[["render",p]]);export{h as default};
